@@ -18,9 +18,7 @@ export const Home = () => {
               </span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+            Learning to code is easier than you may think (even if you’re brand new). Start Today! Choose from in-demand programming languages and courses based on your unique goals. Join 50 Million Learners. Beginner-Friendly. Collaborative Learning. Choose Your Skill Path.
             </p>
           </div>
           <div className="flex items-center">
@@ -43,7 +41,7 @@ export const Home = () => {
         </div>
         <div>
           <img
-            src="https://kitwind.io/assets/kometa/two-thirds-phone.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtzoWSpJbAvNmncCK-dacJ9-ZvW8jg9ZLow&usqp=CAU"
             className="object-cover object-top w-full h-64 mx-auto lg:h-auto xl:mr-24 md:max-w-sm"
             alt=""
           />
