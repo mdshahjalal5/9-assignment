@@ -1,3 +1,4 @@
+import './Nav.css'
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 export const Nav = () => {
@@ -38,7 +39,7 @@ export const Nav = () => {
                 to="home"
                 aria-label="Home"
                 title="Home"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className={`font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 ${({isActive})=>isActive? 'active':undefined}`}
               >
                 Home
               </NavLink>
