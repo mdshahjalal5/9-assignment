@@ -24,7 +24,7 @@ const QuizDetails = ({question}) => {
             else{
                 toast.error('wrong answer, practice more', {autoClose:1000})
             }
-           }} type="radio" name="option" id="" /> <span>{option} </span>
+           }} type="radio"  name="option" id="" /> <span>{option} </span>
            </div>)}
            </div>
         </div>
