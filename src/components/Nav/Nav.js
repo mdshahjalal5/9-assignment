@@ -1,4 +1,3 @@
-import './Nav.css'
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 export const Nav = () => {
@@ -11,7 +10,7 @@ export const Nav = () => {
           <Link
             to="/"
             aria-label="Company"
-            title="Company"
+            title="Fun with Code"
             className="inline-flex items-center"
           >
             <svg
@@ -30,7 +29,7 @@ export const Nav = () => {
               <rect x="14" y="11" width="7" height="12" />
             </svg>
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Company
+            Fun with Code
             </span>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -39,7 +38,7 @@ export const Nav = () => {
                 to="home"
                 aria-label="Home"
                 title="Home"
-                className={`font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 ${({isActive})=>isActive? 'active':undefined}`}
+                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
               </NavLink>
@@ -56,7 +55,7 @@ export const Nav = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/blog"
                 aria-label="Blog"
                 title="Blog"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -75,18 +74,7 @@ export const Nav = () => {
               </NavLink>
             </li>
           </ul>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <NavLink
-                to="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Sign up
-              </NavLink>
-            </li>
-          </ul>
+      
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -117,7 +105,7 @@ export const Nav = () => {
                       <Link
                         to="/"
                         aria-label="Company"
-                        title="Company"
+                        title="Fun with Code"
                         className="inline-flex items-center"
                       >
                         <svg
@@ -136,7 +124,7 @@ export const Nav = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                        Fun with Code
                         </span>
                       </Link>
                     </div>
@@ -180,7 +168,7 @@ export const Nav = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/"
+                          to="blog"
                           aria-label="Blog"
                           title="Blog"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

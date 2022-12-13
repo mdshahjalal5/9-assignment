@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Home = () => {
     return (
       <div className="flex bg-gray-100 p-8 my-12 flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl">
@@ -9,11 +10,11 @@ export const Home = () => {
               </p>
             </div>
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              The quick, brown fox
+              Coding is simple and fun, 
               <br className="hidden md:block" />
-              jumps over{' '}
+              Just feel it
               <span className="inline-block text-deep-purple-accent-400">
-                a lazy dog
+                &nbsp; ye!
               </span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
@@ -23,19 +24,21 @@ export const Home = () => {
             </p>
           </div>
           <div className="flex items-center">
-            <a
-              href="/"
+            <Link
+
+              to="/"
               className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-gray-400 bg-gray-600 focus:shadow-outline focus:outline-none"
             >
               Get started
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+
+              to="/"
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 border border-red-500 p-3 rounded"
             >
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
         <div>
