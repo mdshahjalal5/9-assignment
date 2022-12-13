@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faEye } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
-const QuizDetails = ({question}) => {
+const QuizDetails = ({question, index}) => {
     return (
     <>  
          <div className="flex justify-center">
                 
                 <div className="flex justify-center border my-10 max-w-2xl px-8 py-4 bg-white rounded-lg shadow-md dark:bg--500">
                     <div className='py-5 shadow-lg '>
-                        <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center"> <span className='font-bold'>Quiz:</span><span>{index+1} </span>
                         <h2 className='w-5/4 bg-gray-300 px-3 rounded' >{question.question} </h2>
                         <FontAwesomeIcon className='ml-2' onClick={()=>{
                             toast.info(<h2 className='text-2xl font-bold '>write ans: <span>${question.correctAnswer}</span> </h2>,{autoClose:1000})
